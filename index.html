@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="fullpage.css">
+    <link rel="stylesheet" href="principalpage.css">
 
 </head>
 
@@ -46,17 +47,49 @@
             </div>
         </div>
 
-        <nav class="box_navegator"> <!--PARA LA DESKTOP-->
-            <ul class="index">
-                <li> <a href="#principalpage">HOME</a></li>
-                <li> <a href="#aboutourteam">ABOUT</a></li>
-                <li> <a href="#appfeatures">FEATURES</a></li>
-                <div class="logo"> <img src="img/Logo_Apolly.png" alt="Logo"> </div>
-                <li> <a href="#ourcreativeteam">TEAM</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><button class="download"> <a href=""> DOWNLOAD </a></button></li>        
-            </ul>
+        <nav class="box_navegator"> 
+
+            <div class="index"> <!--PARA LA DESKTOP-->
+                 <ul>
+                    <li> <a href="#principalpage">HOME</a></li>
+                    <li> <a href="#aboutourteam">ABOUT</a></li>
+                    <li> <a href="#appfeatures">FEATURES</a></li>
+                    <div class="logo"> <img src="img/Logo_Apolly.png" alt="Logo"> </div>
+                    <li> <a href="#ourcreativeteam">TEAM</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                  <li><button class="download"> <a href=""> DOWNLOAD </a></button></li>        
+                </ul>
+            </div>
         </nav>
+
+            <div id="indexmobile"> <!--PARA CELU Y TABLET-->
+             
+                <div class="burguermenu">
+
+                    <label class="hamburguermenu">
+                        <input type="checkbox">
+                    </label>
+
+                    <aside class="sidebar">
+
+                        <nav class="box_navegatormobile"> 
+                            <li> <a href="#principalpage">HOME</a></li>
+                            <li> <a href="#aboutourteam">ABOUT</a></li>
+                            <li> <a href="#appfeatures">FEATURES</a></li>
+                            <li> <a href="#ourcreativeteam">TEAM</a></li>
+                            <li><a href="#contact">CONTACT</a></li>     
+                        </nav>
+
+                    </aside>
+
+                </div>
+
+                <div class="logo"> <img src="img/Logo_Apolly.png" alt="Logo"> </div>
+                
+                <button class="download"> <a href="">DOWNLOAD</a></button>
+            </div>
+    
+
     </header>
     <div class="content_principalpage">
         <div class="frame_principalpage">
@@ -250,6 +283,8 @@
             </div>
             <p>info@youremail.com</p>
         </div>
+
+        <hr id="separationmobile">
 
         <div class="box_footerphone"></div>
             <div class="iconcircle">
