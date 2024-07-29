@@ -1,0 +1,238 @@
+
+/* Servicios chichos, telefonos (600px para abajo)*/
+
+@media only screen and (max-width: 600px) {
+
+.principalpage {
+        background: url(img/Backgroundimage_Principalpage.png) center;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    /*NAVBAR*/
+
+    .box_contact-socialmedia {
+        display: none;
+    }
+    .index {
+        display: none; 
+    }
+
+    .box_navegator{
+        padding-top: 40px;
+    }
+
+    #indexmobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 16px 0 16px;
+        max-height: 40px;
+        border-radius: 3px;
+        background-color: white; 
+    }
+
+
+    /*MENU HAMBURGUESA*/
+
+    *, *::after, *::before {
+        box-sizing: border-box;
+    }
+
+    :root{
+        --bar-width:25px;
+        --bar-height:3px;
+        --hamburguer-gap:6px;
+        --hamburger-margin-top: 50px; 
+        --animation-timing: 500ms ease-in-out;
+        --hamburguer-height: calc(var(--bar-height) * 3 + var(--hamburguer-gap) *2);
+    }
+
+
+    .hamburguermenu input{
+        outline: none;
+        appearance: none;
+        pointer-events: none;
+        padding: 0;
+        margin: 0;
+    }
+    .hamburguermenu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: max-content;
+        gap: var(--hamburguer-gap);
+        top:var(--hamburger-margin-top);
+        left: 28px;
+        z-index: 2;
+        --x-width: calc(var(--hamburguer-height) * 1.41421356237);
+    }
+
+
+    .hamburguermenu::before,
+    .hamburguermenu::after,
+    .hamburguermenu input {
+        content: "";
+        width: var(--bar-width);
+        height: var(--bar-height);
+        transform-origin:left center;
+        transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing),
+        background-color var(--animation-timing);
+        background-color: black;
+    }
+    .hamburguermenu:has(input:checked)::before {
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height) / -2);
+        rotate: 45deg;
+    }
+    .hamburguermenu:has(input:checked)::after {
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height) / 2);
+        rotate: -45deg; 
+    }
+    .hamburguermenu input:checked {
+        opacity: 0;
+        width: 0;
+    }
+    
+
+    .sidebar {
+        translate: -1000%;
+        display: flex;
+        justify-content: center;
+        padding-top: calc(var(--hamburguer-height) + var(--hamburger-margin-top) + 20px);
+        padding: 40px 40px 20px 40px;
+        border-radius: 10px;
+        max-height: 300px;
+        width: 120px;
+        font-size: 14px;
+        transition: translate var(--animation-timing);
+        transform: translateY(40%);
+        background-color: white;
+    }
+    .hamburguermenu:has(input:checked) + .sidebar {
+        translate: 0;
+    }
+    .sidebar li{
+        padding-top: 10px;
+    }
+
+    /*FINALIZA EL MENU HAMBURGUESA*/
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-20px);
+        width: 100px;
+        height: 60px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0px 1px 10px 0px #0000001A;
+    }
+    .logo img {
+        width: 79px;
+        height:12px;
+    }
+
+
+    .download {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:76px;
+        height: 34px;
+        margin-right:3px ;
+        border-radius: 3px;
+        border-style: none;
+        background-color:#5956E9 ;
+    }
+    .download a {
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: 600px;
+        color: white;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    /* FINALIZA LA NAVBAR */
+
+    .frame_principalpage {
+
+    box-sizing: border-box;
+    margin: 98px 20px 0 40px;
+    max-width: 350px;
+    height: 358px;
+    border: 10px solid #7572FF;
+    
+    }
+    .content_frame {
+        background-color: #fff;
+        padding: 20px 0;
+        margin: 10px 10px 10px -25px;
+        width: 323px;
+        height: 318px;
+    }
+
+    .content_frame h1{
+        font-size: 23px;
+        font-weight: 600;
+        height: 71px;
+        margin: 10px 20px 18px 18px;
+        line-height: 35.5px;
+        color: #5956E9;
+    }
+
+    .content_frame p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        margin: 0 12px 30px 18px;
+        color: #6C6C72;
+    }
+
+    .content_frame h2{
+        margin: 0 74px 0 18px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        width: 231px;
+        color: black;
+    }
+    .appstore img{
+        width: 108.19px;
+        height: 34.13px;
+    }
+    .appstore .google_appstore {
+        margin: 18.44px 10.17px 20.44px 18px ;
+    }
+    .appstore .apple_appstore {
+        margin: 19.16px 60px 21.16px 0;
+    }
+
+    .phone_principalpage{
+       display: flex;
+       justify-content: center;
+       padding: 40px 0 120px 0;
+    }
+
+    .phone_principalpage img {
+        width: 100%;
+    max-width: 400px;
+    transform: translateX(17.5%);
+    }
+
+}   
+
+   
+
+/* Servicios medianos, tablets, modo paisaje(768px hasta)*/
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+}
+
+
+/*Servicios largos y extra largos, laptos, desktops (1200px para arriba)*/
+@media only screen and (min-width: 1200px) {
+
+}

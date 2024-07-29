@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
     <script src="https://kit.fontawesome.com/7fef3468f2.js" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
 
-    <link rel="stylesheet" href="landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fullpage.css">
+    <link rel="stylesheet" href="principalpage.css">
 
 </head>
 
 <body>
+
 <div class="principalpage">
     <header>
         <div class="box_contact-socialmedia">
@@ -40,35 +47,296 @@
             </div>
         </div>
 
-        <nav class="box_navegator"> <!--PARA LA DESKTOP-->
-            <ul class="index">
-                <li> <a href="">HOME</a></li>
-                <li> <a href="">ABOUT</a></li>
-                <li> <a href="">FEATURES</a></li>
-                <div class="logo"> <img src="img/Logo.png" alt="Logo"> </div>
-                <li> <a href="">TEAM</a></li>
-                <li><a href="">CONTACT</a></li>
-                <li><button class="download"> <a href=""> DOWNLOAD </a></button></li>        
-            </ul>
+        <nav class="box_navegator"> 
+
+            <div class="index"> <!--PARA LA DESKTOP-->
+                 <ul>
+                    <li> <a href="#principalpage">HOME</a></li>
+                    <li> <a href="#aboutourteam">ABOUT</a></li>
+                    <li> <a href="#appfeatures">FEATURES</a></li>
+                    <div class="logo"> <img src="img/Logo_Apolly.png" alt="Logo"> </div>
+                    <li> <a href="#ourcreativeteam">TEAM</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                  <li><button class="download"> <a href=""> DOWNLOAD </a></button></li>        
+                </ul>
+            </div>
         </nav>
+
+            <div id="indexmobile"> <!--PARA CELU Y TABLET-->
+             
+                <div class="burguermenu">
+
+                    <label class="hamburguermenu">
+                        <input type="checkbox">
+                    </label>
+
+                    <aside class="sidebar">
+
+                        <nav class="box_navegatormobile"> 
+                            <li> <a href="#principalpage">HOME</a></li>
+                            <li> <a href="#aboutourteam">ABOUT</a></li>
+                            <li> <a href="#appfeatures">FEATURES</a></li>
+                            <li> <a href="#ourcreativeteam">TEAM</a></li>
+                            <li><a href="#contact">CONTACT</a></li>     
+                        </nav>
+
+                    </aside>
+
+                </div>
+
+                <div class="logo"> <img src="img/Logo_Apolly.png" alt="Logo"> </div>
+                
+                <button class="download"> <a href="">DOWNLOAD</a></button>
+            </div>
     </header>
+
+
     <div class="content_principalpage">
         <div class="frame_principalpage">
             <div class="content_frame">
-                <h1>A Great App Makes Your Life Better</h1>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <h2>Download App Now</h2>
+                <h1>A GREAT APP MAKES YOUR LIFE BETTER</h1>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <h2>DOWNLOAD APP NOW</h2>
                 <div class="appstore">
-                    <a href="https://play.google.com/store/games?device=windows&pli=1" target="_blank"><img src="img/Googleplay.png" alt="playstore_button"></a>
-                    <a href="https://www.apple.com/us-edu/store#home" target="_blank"><img src="img/Appstore.png" alt="appstore_button"></a>
+                    <a  href="https://play.google.com/store/games?device=windows&pli=1" target="_blank"><img class="google_appstore" src="img/Googleplay.png" alt="playstore_button"></a>
+                    <a href="https://www.apple.com/us-edu/store#home" target="_blank"><img class="apple_appstore" src="img/Appstore.png" alt="appstore_button"></a>
                 </div>
             </div>
         </div>
         <div class="phone_principalpage">
-            <img src="img/PAGINA PRINCIPAL.png">
+            <img src="img/Mobile_PrincipalPage.png">
         </div>
     </div>
 </div>
+<main>
+
+    <section id="aboutourteam">
+        <h1>ABOUT OUR APP</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+             ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+
+        <div class="box_about">
+            <img src="img/Mobile_AboutOurTeam.png">
+
+            <div class="box_creative-easy-best">
+
+                <div class="creative-easy-best">
+
+                    <div class="box_circlecheck">
+                        <i class="fa-solid fa-circle-check"></i>    
+                    </div>
+
+                    <div class="box_text">
+                        <h3>CREATIVE DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
+                            amet etiam tincidunt rhoncus, ullamcorper velit. </p>
+                    </div>
+                </div>
+                    
+                <div class="creative-easy-best">
+
+                    <div class="box_circlecheck">
+                        <i class="fa-solid fa-circle-check"></i>    
+                    </div>
+
+                    <div class="box_text">
+                        <h3>EASY TO USE</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
+                                amet etiam tincidunt rhoncus, ullamcorper velit. </p>
+                    </div>
+                </div>
+
+                <div class="creative-easy-best">
+                       
+                    <div class="box_circlecheck">
+                        <i class="fa-solid fa-circle-check"></i>    
+                    </div>
+
+                    <div class="box_text">
+                        <h3>BEST USER EXPERIENCE</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
+                            amet etiam tincidunt rhoncus, ullamcorper velit. </p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section id="appfeatures">
+        <h1>APP FEATURES</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+             ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
     
+        <div class="box_fullfreechat">
+            <img src="img/Icon_FullFreeChat.png">
+            <h3>FULL FREE CHAT</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="box_appfeatureshalf">
+
+            <div class="box_unlimited-awesome">
+
+                <div class="box_unlimited">
+                    <img src="img/Icon_UnlimitedFeatures.png">
+                    <h3>UNLIMITED FEATURES</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+                </div>
+
+                <div class="box_awesome">
+                    <img src="img/Icon_AwesomeUiDesign.png">
+                    <h3>AWESOME UI DESIGN</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+                </div>
+            </div>
+
+            <img src="img/Mobile_APPFeatures.png">
+             
+            <div class="box_iso-retina">
+
+                <div class="box_iso">
+                    <img src="img/Icon_Iso&AndroidVersion.png">
+                    <h3>ISO & ANDROID VERSION</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+                </div>
+
+                <div class="box_retina">
+                    <img src="img/Icon_RetinaReadyGraphics.png">
+                    <h3>RETINA READY GRAPHICS</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+                </div>
+            </div>
+        </div>
+
+        <div class="box_supportreal">
+            <img src="img/Icon_SupportByRealPeople.png">
+            <h3>24/7 SUPPORT BY REAL PEOPLE</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </section>
+
+    <section id="ourcreativeteam">
+        <h1>OUR CREATIVE TEAM</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+             ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+
+        <div class="box_creativeteam">
+
+            <div class="card">
+                <img src="img/Teammember-CarlaPres.png">
+                <h3>CARLA PRESS</h3>
+                <h4>APP DEVELOPER</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.</p>
+
+                <ul class="socialmedias-teammember">
+
+                    <li> <a href="" target="_blank"><i class="fa-brands fa-facebook-f"> </i></a></li>
+                    <li> <a href="" target="_blank"><i class="fa-brands fa-instagram"> </i></a></li>
+                    <li> <a href="" target="_blank"><i class="fa-brands fa-x-twitter"> </i></a></li>
+                    <li> <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+
+                </ul>
+            </div>
+
+            <div class="card">
+                <img src="img/Teammember-CraigGouse.png">
+                <h3>CRAIG GOUSE</h3>
+                <h4>UI/UX DESIGNER</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.</p>
+
+                <ul class="socialmedias-teammember">
+
+                    <li> <a href="" target="_blank"><i class="fa-brands fa-facebook-f"> </i></a></li>
+                    <li> <a href="" target="_blank"><i class="fa-brands fa-instagram"> </i></a></li>
+                    <li> <a href="" target="_blank"><i class="fa-brands fa-x-twitter"> </i></a></li>
+                    <li> <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+
+                </ul>
+            </div>
+
+
+            <div class="card">
+                <img src="img/Teammember-JocelynSeptimus.png">
+                <h3>JOCELYN SEPTIMUS</h3>
+                <h4>WEBSITE DEVELOPER</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.</p>
+
+                <ul class="socialmedias-teammember">
+
+                    <li> <a href="" target="_blank"><i class="fa-brands fa-facebook-f"> </i></a></li>
+                    <li> <a href="" target="_blank"><i class="fa-brands fa-instagram"> </i></a></li>
+                    <li> <a href="" target="_blank"><i class="fa-brands fa-x-twitter"> </i></a></li>
+                    <li> <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="contact">
+    <div class="box_footercontact">
+        <div class="box_footeremail">
+            <div class="iconcircle">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <p>info@youremail.com</p>
+        </div>
+
+        <hr id="separationmobile">
+
+        <div class="box_footerphone"></div>
+            <div class="iconcircle">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <p>+880 321 655 9985</p>
+        </div>
+    </div>
+    <div class="box_footercontent">
+
+        <div class="box_logo">
+            <h3>LOGO</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.</p>
+
+            <ul class="footersocialmedia">
+
+                <li> <a href="" target="_blank"><i class="fa-brands fa-facebook-f"> </i></a></li>
+                <li> <a href="" target="_blank"><i class="fa-brands fa-instagram"> </i></a></li>
+                <li> <a href="" target="_blank"><i class="fa-brands fa-x-twitter"> </i></a></li>
+                <li> <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+
+            </ul>
+        </div>
+
+        <div class="box_quicklink">
+            <h3>QUICK LINK</h3>
+
+            <ul class="footerquicklinks">
+
+                <li> <a href="#aboutourteam"> About </a></li>
+                <li> <a href="#appfeatures"> Features </a></li>
+                <li> <a href=""> Screenshot</a></li>
+                <li> <a href=""> Blog </a></li>
+
+            </ul>
+        </div>
+
+        <div class="box_newsletter">
+            <h3>NEWSLETTER</h3>
+            <p>Subscribe our newsletter to get our latest update & news</p>     
+            <div class="input-newsletter">
+                <input type="text" placeholder="Your email adress">
+                <button type="submit"><img src="img/Flecha_InputFooter.png"></button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footercopyright">
+            <i class="fa-solid fa-copyright"></i>
+            <p>Copyright 2021 .Ojjomedia. All Right Reserved.</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html> 
