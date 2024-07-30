@@ -1,0 +1,86 @@
+@media only screen and (max-width: 600px) {
+    #aboutourapp {
+        background-color: white;
+    }
+    h1 {
+        margin: 60px 78px 0 83px;
+        width: 209px;
+        line-height: 37.5px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    p  {
+        
+        margin: 18px 32px 0 38px;
+        width: 300px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #6C6C72;
+    }
+
+    .box_about {
+        display: flex;
+        justify-content: c;
+        flex-direction: column;
+    }
+    .box_about img{
+        width: 238px;
+        height: 324px;
+        margin:40px 63px 0 69px;
+    }
+
+
+    .box_creative-easy-best{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0 92px 0px;
+        gap: 20px;
+      
+    }
+
+   .creative-easy-best {
+    display: flex;
+    padding: 18px 0 10px 0;
+    box-shadow: 0 0 5px #a3a3a3;
+    width: 343px;
+    height: 110px;
+    margin: auto;
+    border-radius: 5px;
+   }
+
+   .creative-easy-best i {
+    padding: 0 0 0 19px;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    color: #5956e9;
+   }
+   .fa-solid fa-circle-check{
+    padding: 0px 0 0 19px;
+    
+   }
+   
+   }
+   .box_text h3 {
+    margin:0;
+    padding: 0 0 0 30px  ;
+    font-size: 20px;
+    font-weight: 600;
+    height: 30px;
+
+
+  }
+  .box_text p {
+    text-align: left;
+    margin: 0 0 10px 31px;
+    width: 266px;
+    height: 49px;   
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #767575;
+  }
+  .about-creative-text {
+    padding: 0 20px;
+  }
